@@ -67,3 +67,16 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Gazebo
+build/
+devel/
+install/
+*.pyc
+
+# Gazebo model editor and building editor backups
+*.backup
+
+# Gazebo log files
+~/.gazebo/
+logs/
