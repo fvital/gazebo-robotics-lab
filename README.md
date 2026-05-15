@@ -13,6 +13,7 @@ and is being extended continuously beyond those assignments.
 ---
 
 ## Repository Structure
+```
 .
 ├── model/
 │   ├── <building_name>/      # Architectural environments
@@ -28,7 +29,7 @@ and is being extended continuously beyond those assignments.
 ├── CMakeLists.txt
 ├── CMakePresets.json
 └── README.md
-
+```
 Models are resolved via `GAZEBO_MODEL_PATH` (see setup below), so any
 world file in `world/` can reference any model in `model/` regardless
 of which project it was originally built for.
@@ -132,7 +133,7 @@ sudo apt install gazebo11 libgazebo11-dev cmake libprotobuf-dev protobuf-compile
 ```bash
 git clone https://github.com/fvital/gazebo-robotics-lab.git
 cd gazebo-robotics-lab
-cmake --preset default
+cmake --preset default -DBUILD_EXTENDED=ON
 cmake --build --preset default
 ```
 
